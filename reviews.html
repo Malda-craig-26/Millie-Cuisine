@@ -9,48 +9,100 @@
 
     <title>Reviews | Millie's Cuisine</title>
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
+
 <body>
-<header>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header>
 
         <nav class="navbar">
 
             <div class="logo">
-                <img src="images/logo.jpeg" alt="Millie's Cuisine Logo">
+
+                <img
+                    src="images/logo.jpeg"
+                    alt="Millie's Cuisine Logo">
+
             </div>
+
 
             <ul class="nav-links">
 
-                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
 
-                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="about.html">
+                        About
+                    </a>
+                </li>
 
-                <li><a href="menu.html">Menu</a></li>
+                <li>
+                    <a href="menu.html">
+                        Menu
+                    </a>
+                </li>
 
-                <li><a href="gallery.html">Gallery</a></li>
+                <li>
+                    <a href="gallery.html">
+                        Gallery
+                    </a>
+                </li>
 
-                <li><a href="reviews.html">Reviews</a></li>
+                <li>
+                    <a href="reviews.html" class="active">
+                        Reviews
+                    </a>
+                </li>
 
-                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
 
             </ul>
 
-
         </nav>
+
+
+        <!-- Mobile Menu Button -->
+
         <div class="menu-toggle">
 
-    <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i>
 
-</div>
+        </div>
 
     </header>
-    <!-- Reviews Hero -->
+
+
+
+    <!-- =========================
+         REVIEWS HERO
+    ========================== -->
 
     <section class="reviews-hero">
 
@@ -60,7 +112,9 @@
                 What Our Customers Say
             </span>
 
-            <h1>Customer Reviews</h1>
+            <h1>
+                Customer Reviews
+            </h1>
 
             <p>
                 We take pride in serving authentic Kenyan and African cuisine.
@@ -70,294 +124,453 @@
         </div>
 
     </section>
-   <section class="overall-rating">
 
-    <div class="container">
 
-        <h2>Rated 5.0 Stars</h2>
 
-        <div class="stars">
+    <!-- =========================
+         OVERALL RATING
+    ========================== -->
 
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+    <section class="overall-rating">
 
-        </div>
+        <div class="container">
 
-        <p>
-            Our customers love our authentic flavors,
-            friendly service, and warm African hospitality.
-        </p>
+            <h2>
+                Rated 5.0 Stars
+            </h2>
 
-    </div>
 
-</section> 
+            <div class="stars"
+                 aria-label="5 out of 5 stars">
 
-<section class="reviews-section">
-
-    <div class="container">
-
-        <div class="reviews-grid">
-
-            <div class="review-card">
-
-                <div class="stars">
-
-                    ★★★★★
-
-                </div>
-
-                <p>
-
-                    "The best Kenyan food I've had in Minnesota.
-                    Every bite reminded me of home."
-
-                </p>
-
-                <h4>— Sarah W.</h4>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
 
             </div>
 
-            <div class="review-card">
-
-                <div class="stars">
-
-                    ★★★★★
-
-                </div>
-
-                <p>
-
-                    "The Kuku Choma was perfectly seasoned
-                    and the service was exceptional."
-
-                </p>
-
-                <h4>— James M.</h4>
-
-            </div>
-
-            <div class="review-card">
-
-                <div class="stars">
-
-                    ★★★★★
-
-                </div>
-
-                <p>
-
-                    "Beautiful food, generous portions
-                    and wonderful hospitality."
-
-                </p>
-
-                <h4>— Grace A.</h4>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="leave-review">
-
-    <div class="container">
-
-        <h2>Enjoyed Your Visit?</h2>
-
-        <p>
-
-            We'd love to hear about your experience.
-
-            Your feedback helps us grow and serve our community even better.
-
-        </p>
-
-        <a href="#" class="btn">
-            Leave a Google Review
-        </a>
-
-    </div>
-
-</section>
-
-<!--==========================
-        FOOTER
-===========================-->
-
-<footer class="footer">
-
-    <div class="footer-container">
-
-        <!-- BRAND -->
-        <div class="footer-column footer-brand">
-
-            <img src="images/logo.jpeg"
-                 alt="Millie's Cuisine Logo"
-                 class="footer-logo">
 
             <p>
-                Authentic Kenyan & African cuisine made with
-                fresh ingredients, traditional recipes, and love.
-            </p>
-
-            <p class="footer-tagline">
-                A Taste of Kenya in Alabama
+                Our customers love our authentic flavors,
+                friendly service, and warm African hospitality.
             </p>
 
         </div>
 
+    </section>
 
-        <!-- QUICK LINKS -->
-        <div class="footer-column">
 
-            <h3>Quick Links</h3>
 
-            <ul>
+    <!-- =========================
+         CUSTOMER REVIEWS
+    ========================== -->
 
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
+    <section class="reviews-section">
 
-                <li>
-                    <a href="about.html">About Us</a>
-                </li>
+        <div class="container">
 
-                <li>
-                    <a href="menu.html">Our Menu</a>
-                </li>
+            <div class="section-title">
 
-                <li>
-                    <a href="gallery.html">Gallery</a>
-                </li>
+                <span>
+                    Customer Experiences
+                </span>
 
-                <li>
-                    <a href="reviews.html">Reviews</a>
-                </li>
+                <h2>
+                    What People Are Saying
+                </h2>
 
-                <li>
-                    <a href="contact.html">Contact Us</a>
-                </li>
+            </div>
 
-            </ul>
+
+            <div class="reviews-grid">
+
+
+                <!-- REVIEW 1 -->
+
+                <div class="review-card">
+
+                    <div class="stars"
+                         aria-label="5 out of 5 stars">
+
+                        ★★★★★
+
+                    </div>
+
+
+                    <p>
+                        "The food was delicious and full of authentic
+                        Kenyan flavors. Every bite felt like home."
+                    </p>
+
+
+                    <h4>
+                        — Customer Review
+                    </h4>
+
+                </div>
+
+
+
+                <!-- REVIEW 2 -->
+
+                <div class="review-card">
+
+                    <div class="stars"
+                         aria-label="5 out of 5 stars">
+
+                        ★★★★★
+
+                    </div>
+
+
+                    <p>
+                        "The Kuku Choma was perfectly seasoned
+                        and the service was exceptional."
+                    </p>
+
+
+                    <h4>
+                        — Customer Review
+                    </h4>
+
+                </div>
+
+
+
+                <!-- REVIEW 3 -->
+
+                <div class="review-card">
+
+                    <div class="stars"
+                         aria-label="5 out of 5 stars">
+
+                        ★★★★★
+
+                    </div>
+
+
+                    <p>
+                        "Beautiful food, generous portions,
+                        and wonderful hospitality."
+                    </p>
+
+
+                    <h4>
+                        — Customer Review
+                    </h4>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         LEAVE A REVIEW
+    ========================== -->
+
+    <section class="leave-review">
+
+        <div class="container">
+
+            <h2>
+                Enjoyed Your Visit?
+            </h2>
+
+
+            <p>
+                We'd love to hear about your experience.
+                Your feedback helps us grow and serve our community
+                even better.
+            </p>
+
+
+            <!-- Google Review link will be added when provided -->
+
+            <a
+                href="#"
+                class="btn"
+                aria-label="Google Reviews link coming soon">
+
+                Google Reviews Coming Soon
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-column footer-brand">
+
+                <img
+                    src="images/logo.jpeg"
+                    alt="Millie's Cuisine Logo"
+                    class="footer-logo">
+
+
+                <p>
+                    Authentic Kenyan &amp; African cuisine made with
+                    fresh ingredients, traditional recipes, and love.
+                </p>
+
+
+                <p class="footer-tagline">
+                    A Taste of Kenya in Alabama
+                </p>
+
+            </div>
+
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="menu.html">
+                            Our Menu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="reviews.html">
+                            Reviews
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+
+                <p>
+
+                    <i class="fas fa-location-dot"></i>
+
+                    147 Castle Drive<br>
+                    Madison, AL 35758
+
+                </p>
+
+
+                <p>
+
+                    <i class="fas fa-phone"></i>
+
+                    <a href="tel:2568089805">
+                        256-808-9805
+                    </a>
+
+                </p>
+
+
+                <p>
+
+                    <i class="fas fa-clock"></i>
+
+                    Tuesday – Saturday<br>
+                    11:00 AM – 6:00 PM
+
+                </p>
+
+            </div>
+
+
+
+            <!-- SOCIAL MEDIA -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Follow Us
+                </h3>
+
+
+                <p>
+                    Follow us for delicious food,
+                    updates, and more.
+                </p>
+
+
+                <div class="footer-social">
+
+
+                    <!-- FACEBOOK -->
+
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100083269661090"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook">
+
+                        <i class="fab fa-facebook-f"></i>
+
+                    </a>
+
+
+                    <!-- INSTAGRAM -->
+
+                    <a
+                        href="https://www.instagram.com/milliescuisine"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram">
+
+                        <i class="fab fa-instagram"></i>
+
+                    </a>
+
+
+                    <!-- TIKTOK -->
+
+                    <a
+                        href="https://www.tiktok.com/@milliescuisine"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="TikTok">
+
+                        <i class="fab fa-tiktok"></i>
+
+                    </a>
+
+                </div>
+
+
+                <p class="footer-handle">
+                    @milliescuisine
+                </p>
+
+            </div>
 
         </div>
 
 
-        <!-- CONTACT -->
-        <div class="footer-column">
 
-            <h3>Contact Us</h3>
+        <!-- =========================
+             PRE-ORDER NOTICE
+        ========================== -->
+
+        <div class="footer-order-notice">
+
+            <i class="fas fa-calendar-check"></i>
+
+            <span>
+                All menu items must be pre-ordered.
+                Please place your order by 3 PM the previous day.
+            </span>
+
+        </div>
+
+
+
+        <!-- =========================
+             BOTTOM FOOTER
+        ========================== -->
+
+        <div class="footer-bottom">
 
             <p>
-                <i class="fas fa-location-dot"></i>
-                147 Castle Drive<br>
-                Madison, AL 35758
+                © 2026 Millie's Cuisine. All Rights Reserved.
             </p>
 
-            <p>
-                <i class="fas fa-phone"></i>
-                <a href="tel:2568089805">
-                    256-808-9805
+
+            <div class="footer-legal">
+
+                <a href="privacy.html">
+                    Privacy Policy
                 </a>
-            </p>
 
-            <p>
-                <i class="fas fa-clock"></i>
-                Tuesday – Saturday<br>
-                11:00 AM – 6:00 PM
-            </p>
+                <a href="terms.html">
+                    Terms of Use
+                </a>
 
-        </div>
-
-
-        <!-- SOCIAL MEDIA -->
-        <div class="footer-column">
-
-            <h3>Follow Us</h3>
-
-            <p>
-                Follow us for delicious food,
-                updates, and more.
-            </p>
-
-            <div class="footer-social">
-
-    <a href="https://www.facebook.com/profile.php?id=100083269661090"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-    </a>
-
-    <a href="https://www.instagram.com/milliescuisine"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-    </a>
-
-    <a href="https://www.tiktok.com/@milliescuisine"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="TikTok">
-        <i class="fab fa-tiktok"></i>
-    </a>
-
-</div>
-
-<p class="footer-handle">
-    @milliescuisine
-</p>
-
-    <!-- PRE-ORDER NOTICE -->
-
-    <div class="footer-order-notice">
-
-        <i class="fas fa-calendar-check"></i>
-
-        <span>
-            All menu items must be pre-ordered.
-            Please place your order by 3 PM the previous day.
-        </span>
-
-    </div>
-
-
-    <!-- BOTTOM FOOTER -->
-
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 Millie's Cuisine. All Rights Reserved.
-        </p>
-
-        <div class="footer-legal">
-
-            <a href="privacy.html">
-                Privacy Policy
-            </a>
-
-            <a href="terms.html">
-                Terms of Use
-            </a>
+            </div>
 
         </div>
 
-    </div>
+    </footer>
 
-</footer>
 
-<!-- Scroll To Top Button -->
-<button id="scrollTopBtn" title="Go to top">
-    <i class="fas fa-arrow-up"></i>
-</button>
-<script src="js/script.js"></script>
+
+    <!-- =========================
+         SCROLL TO TOP
+    ========================== -->
+
+    <button
+        id="scrollTopBtn"
+        title="Go to top">
+
+        <i class="fas fa-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
