@@ -1,29 +1,9 @@
 // ===============================
-// NAVBAR SCROLL EFFECT
+// MOBILE NAVIGATION
 // ===============================
 
 const navbar = document.querySelector(".navbar");
-
-window.addEventListener("scroll", function () {
-
-    if (window.scrollY > 80) {
-
-        navbar.classList.add("active");
-
-    } else {
-
-        navbar.classList.remove("active");
-
-    }
-
-});
-
-//==============================
-// MOBILE NAVIGATION
-//==============================
-
 const menuToggle = document.querySelector(".menu-toggle");
-const navbar = document.querySelector(".navbar");
 
 if (menuToggle && navbar) {
 
@@ -31,14 +11,56 @@ if (menuToggle && navbar) {
 
         navbar.classList.toggle("active");
 
+        // Change menu icon between bars and X
+        const icon = menuToggle.querySelector("i");
+
+        if (icon) {
+
+            if (navbar.classList.contains("active")) {
+
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+
+            } else {
+
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+
+            }
+
+        }
+
+    });
+
+
+    // Close mobile menu when a navigation link is clicked
+    const navLinks = navbar.querySelectorAll("a");
+
+    navLinks.forEach((link) => {
+
+        link.addEventListener("click", () => {
+
+            navbar.classList.remove("active");
+
+            const icon = menuToggle.querySelector("i");
+
+            if (icon) {
+
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+
+            }
+
+        });
+
     });
 
 }
 
 
-//==============================
+// ===============================
 // SCROLL TO TOP BUTTON
-//==============================
+// ===============================
 
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 
@@ -73,9 +95,10 @@ if (scrollTopBtn) {
 
 }
 
-//==============================
+
+// ===============================
 // GALLERY LIGHTBOX
-//==============================
+// ===============================
 
 const galleryImages = document.querySelectorAll(".gallery-item img");
 
@@ -86,7 +109,12 @@ const lightboxImage = document.getElementById("lightboxImage");
 const lightboxClose = document.getElementById("lightboxClose");
 
 
-if (galleryImages.length && lightbox && lightboxImage && lightboxClose) {
+if (
+    galleryImages.length &&
+    lightbox &&
+    lightboxImage &&
+    lightboxClose
+) {
 
     galleryImages.forEach((image) => {
 
@@ -103,6 +131,7 @@ if (galleryImages.length && lightbox && lightboxImage && lightboxClose) {
     });
 
 
+    // Close using the X button
     lightboxClose.addEventListener("click", () => {
 
         lightbox.classList.remove("active");
@@ -110,9 +139,22 @@ if (galleryImages.length && lightbox && lightboxImage && lightboxClose) {
     });
 
 
+    // Close by clicking outside the image
     lightbox.addEventListener("click", (event) => {
 
         if (event.target === lightbox) {
+
+            lightbox.classList.remove("active");
+
+        }
+
+    });
+
+
+    // Close lightbox with Escape key
+    document.addEventListener("keydown", (event) => {
+
+        if (event.key === "Escape") {
 
             lightbox.classList.remove("active");
 

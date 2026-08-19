@@ -1,99 +1,489 @@
-@media(max-width:768px){
+/* =========================================================
+   MOBILE & TABLET RESPONSIVE STYLES
+   Millie's Cuisine
+========================================================= */
 
-    .menu-toggle{
 
-        display:block;
+/* =========================================================
+   TABLETS
+========================================================= */
 
+@media (max-width: 992px) {
+
+    .container {
+        width: 90%;
+        max-width: 100%;
     }
 
-    .navbar{
+    /* Navigation */
 
-        position:absolute;
-
-        top:100%;
-
-        left:0;
-
-        width:100%;
-
-        background:#111;
-
-        display:none;
-
+    .navbar {
+        padding: 15px 5%;
     }
 
-    .navbar.active{
-
-        display:block;
-
+    .nav-links {
+        gap: 20px;
     }
 
-    .navbar ul{
+    /* Hero */
 
-        flex-direction:column;
-
-        padding:20px;
-
+    .hero-content {
+        width: 90%;
     }
 
-    .navbar ul li{
+    /* Featured dishes */
 
-        margin:15px 0;
+    .dish-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-        text-align:center;
+    /* Taste of Africa */
 
+    .taste-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Values */
+
+    .values-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Gallery */
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Reviews */
+
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
 
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media (max-width: 768px) {
 
-    .contact-form-wrapper {
 
+    /* =====================================================
+       GENERAL
+    ===================================================== */
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    /* =====================================================
+       HEADER / NAVIGATION
+    ===================================================== */
+
+    header {
+        position: relative;
+        width: 100%;
+    }
+
+    .navbar {
+        position: relative;
+        width: 100%;
+        padding: 15px 5%;
+    }
+
+    .logo img {
+        max-width: 130px;
+        height: auto;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 25px;
+        z-index: 1001;
+    }
+
+    .nav-links,
+    .navbar ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        display: none;
+        flex-direction: column;
+
+        background: #111;
+
+        padding: 20px 0;
+        margin: 0;
+
+        z-index: 1000;
+    }
+
+    .nav-links.active,
+    .navbar.active .nav-links,
+    .navbar.active ul {
+        display: flex;
+    }
+
+    .nav-links li,
+    .navbar ul li {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-links li a,
+    .navbar ul li a {
+        display: block;
+        padding: 12px 20px;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero {
+        min-height: 80vh;
+        padding: 100px 5% 70px;
+    }
+
+    .hero-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-content h3 {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+        line-height: 1.1;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-buttons .btn,
+    .hero-buttons .btn-secondary {
+        width: 80%;
+        max-width: 280px;
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       SECTION TITLES
+    ===================================================== */
+
+    .section-title {
+        text-align: center;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .section-title p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       WELCOME
+    ===================================================== */
+
+    .welcome {
+        padding: 70px 5%;
+    }
+
+    .welcome-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .welcome-content h2 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+
+    /* =====================================================
+       TASTE OF AFRICA
+    ===================================================== */
+
+    .taste-africa {
+        padding: 70px 5%;
+    }
+
+    .taste-grid {
         grid-template-columns: 1fr;
-
-        gap: 40px;
-
+        gap: 20px;
     }
 
-    .contact-form {
-
-        padding: 25px;
-
+    .taste-card {
+        width: 100%;
     }
+
+
+    /* =====================================================
+       FEATURED DISHES
+    ===================================================== */
+
+    .featured-dishes {
+        padding: 70px 5%;
+    }
+
+    .dish-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .dish-card {
+        width: 100%;
+    }
+
+    .dish-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+    /* =====================================================
+       ABOUT PAGE
+    ===================================================== */
+
+    .page-banner {
+        padding: 80px 5%;
+        text-align: center;
+    }
+
+    .page-banner h1 {
+        font-size: 40px;
+    }
+
+    .our-story {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 70px 5%;
+    }
+
+    .story-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .story-content {
+        text-align: center;
+    }
+
+    .story-content h2 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .mission {
+        padding: 70px 5%;
+    }
+
+    .mission-card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .mission-card h2 {
+        font-size: 30px;
+    }
+
+    .values {
+        padding: 70px 5%;
+    }
+
+    .values-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .value-card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .promise {
+        padding: 70px 5%;
+    }
+
+    .promise-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .promise-content h2 {
+        font-size: 32px;
+    }
+
+    .about-cta {
+        padding: 70px 5%;
+        text-align: center;
+    }
+
+    .about-cta h2 {
+        font-size: 32px;
+    }
+
+
+    /* =====================================================
+       GALLERY
+    ===================================================== */
+
+    .gallery-hero {
+        padding: 80px 5%;
+        text-align: center;
+    }
+
+    .gallery-hero h1 {
+        font-size: 40px;
+    }
+
+    .gallery-hero p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .gallery-intro {
+        padding: 60px 5%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+    /* =====================================================
+       LIGHTBOX
+    ===================================================== */
+
+    .lightbox img {
+        max-width: 90%;
+        max-height: 75vh;
+    }
+
+
+    /* =====================================================
+       REVIEWS
+    ===================================================== */
+
+    .reviews-hero {
+        padding: 80px 5%;
+        text-align: center;
+    }
+
+    .reviews-hero h1 {
+        font-size: 40px;
+    }
+
+    .overall-rating {
+        padding: 60px 5%;
+        text-align: center;
+    }
+
+    .overall-rating h2 {
+        font-size: 30px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .review-card {
+        width: 100%;
+    }
+
+    .leave-review {
+        padding: 60px 5%;
+        text-align: center;
+    }
+
+    .leave-review h2 {
+        font-size: 32px;
+    }
+
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
 
     .contact-hero {
-
-        padding: 90px 6%;
-
-    }
-
-    .map-placeholder {
-
-        height: 280px;
-
-    }
-
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-
-    .contact-hero {
-        padding: 80px 6%;
+        padding: 80px 5%;
+        text-align: center;
     }
 
     .contact-hero h1 {
-        font-size: 36px;
+        font-size: 40px;
     }
 
     .contact-details {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-detail {
+        width: 100%;
     }
 
     .contact-form-wrapper {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 35px;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+        width: 100%;
     }
 
     .form-row {
@@ -101,8 +491,182 @@
         gap: 0;
     }
 
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     .preorder-content {
         align-items: flex-start;
+        gap: 15px;
+    }
+
+    .map-placeholder {
+        height: 280px;
+        padding: 25px;
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       PRIVACY & TERMS
+    ===================================================== */
+
+    .privacy-hero {
+        padding: 80px 5%;
+        text-align: center;
+    }
+
+    .privacy-hero h1 {
+        font-size: 40px;
+    }
+
+    .policy-content {
+        padding: 60px 5%;
+    }
+
+    .policy-box {
+        width: 100%;
+        padding: 25px 20px;
+    }
+
+    .policy-box h2 {
+        font-size: 25px;
+    }
+
+    .policy-box p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+
+    /* =====================================================
+       BUTTONS
+    ===================================================== */
+
+    .btn,
+    .btn-secondary {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-brand {
+        text-align: center;
+    }
+
+    .footer-logo {
+        max-width: 150px;
+        height: auto;
+    }
+
+    .footer-column ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-order-notice {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .footer-legal {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    /* =====================================================
+       SCROLL TO TOP
+    ===================================================== */
+
+    #scrollTopBtn {
+        right: 15px;
+        bottom: 15px;
+        width: 42px;
+        height: 42px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .hero {
+        min-height: 75vh;
+        padding: 90px 5% 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    .page-banner h1,
+    .gallery-hero h1,
+    .reviews-hero h1,
+    .contact-hero h1,
+    .privacy-hero h1 {
+        font-size: 34px;
+    }
+
+    .section-title h2,
+    .welcome-content h2,
+    .story-content h2 {
+        font-size: 28px;
+    }
+
+    .btn,
+    .btn-secondary {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .contact-form {
+        padding: 20px 15px;
+    }
+
+    .policy-box {
+        padding: 20px 15px;
     }
 
 }
