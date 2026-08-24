@@ -237,4 +237,5 @@ if (contactForm) {
         }
 
     });
+}
 
