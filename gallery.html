@@ -1,386 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Gallery | Millie's Cuisine</title>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<base target="_blank">
 </head>
-
 
 <body>
 
-
-    <!-- =========================
-         HEADER
-    ========================== -->
-
-    <header class="header">
-
-        <div class="container">
-
-            <a href="index.html" class="logo">
-
-                <img
-                    src="images/logo.jpeg"
-                    alt="Millie's Cuisine Logo">
-
-            </a>
-
-
-            <nav class="navbar">
-
-                <ul>
-
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="about.html">
-                            About
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="menu.html">
-                            Menu
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="gallery.html" class="active">
-                            Gallery
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="reviews.html">
-                            Reviews
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html">
-                            Contact
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-
-            <!-- Mobile Menu Button -->
-
-            <div class="menu-toggle">
-
-                <i class="fas fa-bars"></i>
-
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Millie's Cuisine Logo">
             </div>
-
-        </div>
-
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
     </header>
 
-
-
-    <!-- =========================
-         GALLERY HERO
-    ========================== -->
-
+    <!-- GALLERY HERO -->
     <section class="gallery-hero">
-
         <div class="container">
-
-            <span class="section-subtitle">
-                Authentic Kenyan &amp; African Cuisine
-            </span>
-
-            <h1>
-                Our Gallery
-            </h1>
-
-            <p>
-                Explore the rich colors, bold flavors, and beautiful presentation
-                of our freshly prepared Kenyan and African dishes.
-            </p>
-
+            <span class="section-subtitle">Authentic Kenyan & African Cuisine</span>
+            <h1>Our Gallery</h1>
+            <p>Explore the rich colors, bold flavors, and beautiful presentation of our freshly prepared Kenyan and African dishes.</p>
         </div>
-
     </section>
 
-
-
-    <!-- =========================
-         GALLERY INTRO
-    ========================== -->
-
+    <!-- GALLERY INTRO -->
     <section class="gallery-intro">
-
         <div class="container">
-
             <div class="section-title">
-
-                <span>
-                    Every Plate Has A Story
-                </span>
-
-                <h2>
-                    A Feast For The Eyes
-                </h2>
-
-                <p>
-                    Every meal at Millie's Cuisine is prepared with passion,
-                    tradition, and authentic African flavors.
-                    Browse our gallery and discover the beauty of our cuisine.
-                </p>
-
+                <span>Every Plate Has A Story</span>
+                <h2>A Feast For The Eyes</h2>
+                <p>Every meal at Millie's Cuisine is prepared with passion, tradition, and authentic African flavors. Browse our gallery and discover the beauty of our cuisine.</p>
             </div>
-
         </div>
-
     </section>
 
-
-
-    <!-- =========================
-         GALLERY
-    ========================== -->
-
+    <!-- GALLERY -->
     <section class="gallery-section">
-
         <div class="container">
-
             <div class="gallery-grid">
-
-
-                <!-- IMAGE 1 -->
-
                 <div class="gallery-item">
-
-                    <img
-                        src="images/chipssamosa.jpg"
-                        alt="Chips and samosa">
-
+                    <img src="images/chipssamosa.jpg" alt="Chips and samosa" loading="lazy">
                 </div>
-
-
-                <!-- IMAGE 2 -->
-
                 <div class="gallery-item">
-
-                    <img
-                        src="images/rice.jpg"
-                        alt="Kenyan rice dish">
-
+                    <img src="images/rice.jpg" alt="Kenyan rice dish" loading="lazy">
                 </div>
-
-
-                <!-- IMAGE 3 -->
-
                 <div class="gallery-item">
-
-                    <img
-                        src="images/ugalistew.jpg"
-                        alt="Ugali served with stew">
-
+                    <img src="images/ugalistew.jpg" alt="Ugali served with stew" loading="lazy">
                 </div>
-
-
-                <!-- IMAGE 4 -->
-
                 <div class="gallery-item">
-
-                    <img
-                        src="images/fishkaanga.jpg"
-                        alt="Fried tilapia">
-
+                    <img src="images/fishkaanga.jpg" alt="Fried tilapia" loading="lazy">
                 </div>
-
-
-                <!-- IMAGE 5 -->
-
                 <div class="gallery-item">
-
-                    <img
-                        src="images/fishplantain.jpg"
-                        alt="Fish served with plantains">
-
+                    <img src="images/fishplantain.jpg" alt="Fish served with plantains" loading="lazy">
                 </div>
-
-
-                <!-- IMAGE 6 -->
-
                 <div class="gallery-item">
-
-                    <img
-                        src="images/beanscabbage.jpg"
-                        alt="Beans and cabbage">
-
+                    <img src="images/beanscabbage.jpg" alt="Beans and cabbage" loading="lazy">
                 </div>
-
-
-                <!-- IMAGE 7 -->
-
                 <div class="gallery-item">
-
-                    <img
-                        src="images/veggies.jpg"
-                        alt="Fresh African vegetables">
-
+                    <img src="images/veggies.jpg" alt="Fresh African vegetables" loading="lazy">
                 </div>
-
-
-                <!-- IMAGE 8 -->
-
                 <div class="gallery-item">
-
-                    <img
-                        src="images/chapobeans.jpg"
-                        alt="Chapati and beans">
-
+                    <img src="images/chapobeans.jpg" alt="Chapati and beans" loading="lazy">
                 </div>
-
-
-                <!-- IMAGE 9 -->
-
                 <div class="gallery-item">
-
-                    <img
-                        src="images/fish.jpg"
-                        alt="African fish dish">
-
+                    <img src="images/fish.jpg" alt="African fish dish" loading="lazy">
                 </div>
-
-
-                <!-- IMAGE 10 -->
-
                 <div class="gallery-item">
-
-                    <img
-                        src="images/samosa.jpg"
-                        alt="Kenyan samosas">
-
+                    <img src="images/samosa.jpg" alt="Kenyan samosas" loading="lazy">
                 </div>
-
-
-                <!-- IMAGE 11 -->
-
                 <div class="gallery-item">
-
-                    <img
-                        src="images/chips.jpg"
-                        alt="Kenyan style chips">
-
+                    <img src="images/chips.jpg" alt="Kenyan style chips" loading="lazy">
                 </div>
-
-
-                <!-- IMAGE 12 -->
-
                 <div class="gallery-item">
-
-                    <img
-                        src="images/ricechickvegg.jpg"
-                        alt="Rice, chicken and vegetables">
-
+                    <img src="images/ricechickvegg.jpg" alt="Rice, chicken and vegetables" loading="lazy">
                 </div>
-
-
-                <!-- IMAGE 13 -->
-
                 <div class="gallery-item">
-
-                    <img
-                        src="images/ugalikales.jpg"
-                        alt="Ugali and kale">
-
+                    <img src="images/ugalikales.jpg" alt="Ugali and kale" loading="lazy">
                 </div>
-
-
-                <!-- IMAGE 14 -->
-
                 <div class="gallery-item">
-
-                    <img
-                        src="images/about.jpg"
-                        alt="Millie's Cuisine African food">
-
+                    <img src="images/about.jpg" alt="Millie's Cuisine African food" loading="lazy">
                 </div>
-
-
             </div>
-
         </div>
-
     </section>
 
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- BRAND -->
+            <div class="footer-column footer-brand">
+                <img src="images/logo.jpeg" alt="Millie's Cuisine Logo" class="footer-logo" loading="lazy">
+                <p>Authentic Kenyan & African cuisine made with fresh ingredients, traditional recipes, and love.</p>
+                <p class="footer-tagline">A Taste of Kenya in Alabama</p>
+            </div>
 
+            <!-- QUICK LINKS -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
 
-    <!-- =========================
-         SCROLL TO TOP
-    ========================== -->
+            <!-- CONTACT -->
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-location-dot"></i> 147 Castle Drive<br>Madison, AL 35758</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:2568089805">256-808-9805</a></p>
+                <p><i class="fas fa-clock"></i> Tuesday – Saturday<br>11:00 AM – 6:00 PM</p>
+            </div>
 
-    <button
-        id="scrollTopBtn"
-        title="Go to top">
+            <!-- SOCIAL MEDIA -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <p>Follow us for delicious food, updates, and more.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=100083269661090" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/milliescuisine" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@milliescuisine" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <p class="footer-handle">@milliescuisine</p>
+            </div>
+        </div>
 
+        <!-- PRE-ORDER NOTICE -->
+        <div class="footer-order-notice">
+            <i class="fas fa-calendar-check"></i>
+            <span>All menu items must be pre-ordered. Please place your order by 3 PM the previous day.</span>
+        </div>
+
+        <!-- BOTTOM FOOTER -->
+        <div class="footer-bottom">
+            <p>© 2026 Millie's Cuisine. All Rights Reserved.</p>
+            <div class="footer-legal">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP -->
+    <button id="scrollTopBtn" title="Go to top">
         <i class="fas fa-arrow-up"></i>
-
     </button>
 
-
-
-    <!-- =========================
-         GALLERY LIGHTBOX
-    ========================== -->
-
-    <div
-        class="lightbox"
-        id="lightbox">
-
-        <button
-            class="lightbox-close"
-            id="lightboxClose"
-            aria-label="Close image">
-
+    <!-- GALLERY LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close image">
             <i class="fas fa-times"></i>
-
         </button>
-
-
-        <img
-            id="lightboxImage"
-            src=""
-            alt="Expanded gallery image">
-
+        <img id="lightboxImage" alt="Expanded gallery image">
     </div>
 
-
-
-    <!-- JavaScript -->
-
     <script src="js/script.js"></script>
-
 </body>
-
 </html>

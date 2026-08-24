@@ -3,20 +3,22 @@
 // ===============================
 
 const navbar = document.querySelector(".navbar");
+const navLinks = document.querySelector(".nav-links");
 const menuToggle = document.querySelector(".menu-toggle");
 
-if (menuToggle && navbar) {
+if (menuToggle && navLinks) {
 
     menuToggle.addEventListener("click", () => {
 
-        navbar.classList.toggle("active");
+        // Toggle .active on .nav-links (not .navbar)
+        navLinks.classList.toggle("active");
 
         // Change menu icon between bars and X
         const icon = menuToggle.querySelector("i");
 
         if (icon) {
 
-            if (navbar.classList.contains("active")) {
+            if (navLinks.classList.contains("active")) {
 
                 icon.classList.remove("fa-bars");
                 icon.classList.add("fa-xmark");
@@ -34,13 +36,13 @@ if (menuToggle && navbar) {
 
 
     // Close mobile menu when a navigation link is clicked
-    const navLinks = navbar.querySelectorAll("a");
+    const navLinkItems = navLinks.querySelectorAll("a");
 
-    navLinks.forEach((link) => {
+    navLinkItems.forEach((link) => {
 
         link.addEventListener("click", () => {
 
-            navbar.classList.remove("active");
+            navLinks.classList.remove("active");
 
             const icon = menuToggle.querySelector("i");
 
@@ -52,6 +54,53 @@ if (menuToggle && navbar) {
             }
 
         });
+
+    });
+
+
+    // Close mobile menu when clicking outside
+    document.addEventListener("click", (event) => {
+
+        if (
+            navLinks.classList.contains("active") &&
+            !navbar.contains(event.target)
+        ) {
+
+            navLinks.classList.remove("active");
+
+            const icon = menuToggle.querySelector("i");
+
+            if (icon) {
+
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+
+            }
+
+        }
+
+    });
+
+}
+
+
+// ===============================
+// NAVBAR SCROLL EFFECT
+// ===============================
+
+if (navbar) {
+
+    window.addEventListener("scroll", () => {
+
+        if (window.scrollY > 50) {
+
+            navbar.classList.add("scrolled");
+
+        } else {
+
+            navbar.classList.remove("scrolled");
+
+        }
 
     });
 
@@ -238,4 +287,3 @@ if (contactForm) {
 
     });
 }
-

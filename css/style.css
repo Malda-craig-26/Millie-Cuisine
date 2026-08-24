@@ -58,7 +58,7 @@ body{
 
     z-index:1000;
 
-  transform:translateY(-2px);
+    transition:0.4s ease;
 }
 
 .logo img{
@@ -378,13 +378,7 @@ body{
       NAVBAR SCROLL
 ==========================*/
 
-.navbar{
-
-    transition:0.4s ease;
-
-}
-
-.navbar.active{
+.navbar.scrolled{
 
     background:#2E1F16;
 
@@ -1132,84 +1126,7 @@ body{
         HEADER
 ==========================*/
 
-.header{
-
-    position:sticky;
-    top:0;
-    left:0;
-    width:100%;
-    background:#111;
-    z-index:1000;
-    box-shadow:0 4px 15px rgba(0,0,0,.2);
-
-}
-
-.header .container{
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    gap: 40px;
-    padding:18px 8%;
-
-}
-.logo img{
-
-    width:85px;
-
-}
-.navbar{
-    margin-left: auto;
-}
-.navbar ul{
-
-    display:flex;
-    list-style:none;
-    gap:35px;
-
-}
-
-.navbar a{
-
-    color:white;
-    text-decoration:none;
-    font-size:17px;
-    transition:.3s;
-
-}
-.navbar a:hover{
-
-    color:#D4AF37;
-
-}
-.navbar .active{
-
-    color:#D4AF37;
-    font-weight:600;
-
-}
-.btn{
-
-    background:#D4AF37;
-    color:white;
-    padding:12px 28px;
-    border-radius:30px;
-    text-decoration:none;
-    transition:.3s;
-
-}
-
-.btn:hover{
-
-    background:#b89425;
-
-}
-
-.header{
-
-    border-bottom:2px solid #D4AF37;
-
-}
+/* REMOVED: Duplicate header/navbar block that was causing specificity wars */
 
 /*==========================
       A TASTE OF AFRICA
@@ -1272,6 +1189,7 @@ body{
     display:block;
 
 }
+
 /*==========================
         FOOTER
 ==========================*/
@@ -1491,6 +1409,7 @@ body{
     transform:scale(1.08);
 
 }
+
 /*==========================
       REVIEWS PAGE
 ==========================*/
@@ -1639,6 +1558,18 @@ body{
 
 }
 
+.terms-hero{
+
+    background:#111;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:120px 8%;
+
+}
+
 .policy-content{
 
     background:#f8f3ea;
@@ -1680,6 +1611,7 @@ body{
     color:#555;
 
 }
+
 /*==========================
       MOBILE MENU
 ==========================*/
@@ -2005,7 +1937,7 @@ body{
     border: 1px solid #ddd;
     border-radius: 6px;
     font-family: inherit;
-    font-size: 15px;
+    font-size: 16px;
     outline: none;
 }
 
@@ -2325,5 +2257,3 @@ body{
     }
 
 }
-
-

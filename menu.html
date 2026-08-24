@@ -1,904 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Our Menu | Millie's Cuisine</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- Main CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<base target="_blank">
 </head>
 
 <body>
 
-    <!-- ==========================
-         HEADER
-    =========================== -->
-
-    <header class="header">
-
-        <div class="container">
-
-            <a href="index.html" class="logo">
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
                 <img src="images/logo.jpeg" alt="Millie's Cuisine Logo">
-            </a>
-
-            <nav class="navbar">
-
-                <ul>
-
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-
-                    <li>
-                        <a href="menu.html" class="active">Menu</a>
-                    </li>
-
-                    <li>
-                        <a href="gallery.html">Gallery</a>
-                    </li>
-
-                    <li>
-                        <a href="reviews.html">Reviews</a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-            <!-- Mobile Menu Button -->
-            <div class="menu-toggle">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </div>
-
-        </div>
-
+        </nav>
     </header>
 
-
-    <!-- ==========================
-         MENU HERO
-    =========================== -->
-
+    <!-- MENU HERO -->
     <section class="menu-hero">
-
         <div class="container">
-
-            <span class="section-subtitle">
-                Authentic Kenyan & African Cuisine
-            </span>
-
+            <span class="section-subtitle">Authentic Kenyan & African Cuisine</span>
             <h1>Our Menu</h1>
-
-            <p>
-                Discover the rich flavors of Africa. Every meal is freshly prepared
-                using authentic recipes, quality ingredients, and warm hospitality.
-            </p>
-
+            <p>Discover the rich flavors of Africa. Every meal is freshly prepared using authentic recipes, quality ingredients, and warm hospitality.</p>
         </div>
-
     </section>
 
-
-    <!-- ==========================
-         FEATURED MENU
-    =========================== -->
-
+    <!-- FEATURED MENU -->
     <section class="featured-menu">
-
         <div class="container">
-
             <div class="section-title">
-
                 <span>Signature Dishes</span>
-
                 <h2>Customer Favorites</h2>
-
             </div>
-
             <div class="menu-grid">
-
-                <!-- SAMOSAS -->
-
                 <div class="menu-card">
-
-                    <img
-                        src="images/samosa.jpg"
-                        alt="Kenyan Samosas"
-                    >
-
+                    <img src="images/samosa.jpg" alt="Kenyan Samosas" loading="lazy">
                     <div class="menu-content">
-
                         <h3>Samosas</h3>
-
-                        <p>
-                            Crispy golden pastries filled with seasoned
-                            potato or beef.
-                        </p>
-
+                        <p>Crispy golden pastries filled with seasoned potato or beef.</p>
                         <span>From $7.99</span>
-
                     </div>
-
                 </div>
-
-
-                <!-- CHAPATI & BEANS -->
-
                 <div class="menu-card">
-
-                    <img
-                        src="images/chapobeans.jpg"
-                        alt="Chapati and Beans"
-                    >
-
+                    <img src="images/chapobeans.jpg" alt="Chapati and Beans" loading="lazy">
                     <div class="menu-content">
-
-                        <h3>Chapati &amp; Beans</h3>
-
-                        <p>
-                            Soft Kenyan chapati served with flavorful
-                            seasoned beans.
-                        </p>
-
+                        <h3>Chapati & Beans</h3>
+                        <p>Soft Kenyan chapati served with flavorful seasoned beans.</p>
                         <span>Authentic Favorite</span>
-
                     </div>
-
                 </div>
-
-
-                <!-- RICE & CHICKEN -->
-
                 <div class="menu-card">
-
-                    <img
-                        src="images/rice.jpg"
-                        alt="Rice and Chicken"
-                    >
-
+                    <img src="images/rice.jpg" alt="Rice and Chicken" loading="lazy">
                     <div class="menu-content">
-
-                        <h3>Rice &amp; Chicken</h3>
-
-                        <p>
-                            Flavorful rice served with tender chicken
-                            and African-inspired seasoning.
-                        </p>
-
+                        <h3>Rice & Chicken</h3>
+                        <p>Flavorful rice served with tender chicken and African-inspired seasoning.</p>
                         <span>Chef's Selection</span>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-
-    <!-- ==========================
-         COMPLETE MENU
-    =========================== -->
-
+    <!-- COMPLETE MENU -->
     <section class="restaurant-menu">
-
         <div class="container">
-
             <div class="section-title">
-
                 <span>Explore Our Menu</span>
-
                 <h2>Authentic African Flavors</h2>
-
-                <p>
-                    Carefully prepared dishes inspired by Kenya and the rich
-                    culinary traditions of Africa.
-                </p>
-
+                <p>Carefully prepared dishes inspired by Kenya and the rich culinary traditions of Africa.</p>
             </div>
-
-
             <div class="menu-columns">
-
-
-                <!-- ==========================
-                     LEFT COLUMN
-                =========================== -->
-
+                <!-- LEFT COLUMN -->
                 <div class="menu-column">
+                    <h3 class="category-title">Samosas</h3>
+                    <div class="menu-row"><span>3 Potato or Beef Samosas</span><strong>$7.99</strong></div>
+                    <div class="menu-row"><span>5 Potato or Beef Samosas</span><strong>$11.99</strong></div>
+                    <div class="menu-row"><span>10 Potato or Beef Samosas</span><strong>$17.00</strong></div>
 
-                    <!-- SAMOSAS -->
-
-                    <h3 class="category-title">
-                        Samosas
-                    </h3>
-
-                    <div class="menu-row">
-
-                        <span>3 Potato or Beef Samosas</span>
-
-                        <strong>$7.99</strong>
-
-                    </div>
-
-                    <div class="menu-row">
-
-                        <span>5 Potato or Beef Samosas</span>
-
-                        <strong>$11.99</strong>
-
-                    </div>
-
-                    <div class="menu-row">
-
-                        <span>10 Potato or Beef Samosas</span>
-
-                        <strong>$17.00</strong>
-
-                    </div>
-
-
-                    <!-- SNACKS -->
-
-                    <h3 class="category-title">
-                         Snacks
-                    </h3>
-
-                    <div class="menu-row">
-
-                        <span>2 Kenyan Sausages</span>
-
-                        <strong>$6.99</strong>
-
-                    </div>
-
-                    <div class="menu-row">
-
-                        <span>2 Sausages &amp; Masala Fries</span>
-
-                        <strong>$12.99</strong>
-
-                    </div>
-
-                    <div class="menu-row">
-
-                        <span>2 Samosas &amp; Masala Fries</span>
-
-                        <strong>$11.99</strong>
-
-                    </div>
-
-                    <div class="menu-row">
-
-                        <span>Mandazi</span>
-
-                        <strong>$7.95</strong>
-
-                    </div>
-
+                    <h3 class="category-title">Snacks</h3>
+                    <div class="menu-row"><span>2 Kenyan Sausages</span><strong>$6.99</strong></div>
+                    <div class="menu-row"><span>2 Sausages & Masala Fries</span><strong>$12.99</strong></div>
+                    <div class="menu-row"><span>2 Samosas & Masala Fries</span><strong>$11.99</strong></div>
+                    <div class="menu-row"><span>Mandazi</span><strong>$7.95</strong></div>
                 </div>
 
-
-                <!-- ==========================
-                     RIGHT COLUMN
-                =========================== -->
-
+                <!-- RIGHT COLUMN -->
                 <div class="menu-column">
+                    <h3 class="category-title">Sides</h3>
+                    <div class="menu-row"><span>Pilau Rice</span><strong>$5.00</strong></div>
+                    <div class="menu-row"><span>Chapati</span><strong>$3.00</strong></div>
+                    <div class="menu-row"><span>Ugali</span><strong>$3.50</strong></div>
+                    <div class="menu-row"><span>Masala Fries</span><strong>$6.95</strong></div>
+                    <div class="menu-row"><span>Plantains</span><strong>$4.25</strong></div>
 
-                    <!-- SIDES -->
-
-                    <h3 class="category-title">
-                        Sides
-                    </h3>
-
-                    <div class="menu-row">
-
-                        <span>Pilau Rice</span>
-
-                        <strong>$5.00</strong>
-
-                    </div>
-
-                    <div class="menu-row">
-
-                        <span>Chapati</span>
-
-                        <strong>$3.00</strong>
-
-                    </div>
-
-                    <div class="menu-row">
-
-                        <span>Ugali</span>
-
-                        <strong>$3.50</strong>
-
-                    </div>
-
-                    <div class="menu-row">
-
-                        <span>Masala Fries</span>
-
-                        <strong>$6.95</strong>
-
-                    </div>
-
-                    <div class="menu-row">
-
-                        <span>Plantains</span>
-
-                        <strong>$4.25</strong>
-
-                    </div>
-
-
-                    <!-- BEVERAGES -->
-
-                    <h3 class="category-title">
-                        Beverages
-                    </h3>
-
-                    <div class="menu-row">
-
-                        <span>Coke</span>
-
-                        <strong>$2.49</strong>
-
-                    </div>
-
-                    <div class="menu-row">
-
-                        <span>Sprite</span>
-
-                        <strong>$2.49</strong>
-
-                    </div>
-
-                    <div class="menu-row">
-
-                        <span>Fanta</span>
-
-                        <strong>$2.49</strong>
-
-                    </div>
-
-                    <div class="menu-row">
-
-                        <span>Water</span>
-
-                        <strong>$1.99</strong>
-
-                    </div>
-
+                    <h3 class="category-title">Beverages</h3>
+                    <div class="menu-row"><span>Coke</span><strong>$2.49</strong></div>
+                    <div class="menu-row"><span>Sprite</span><strong>$2.49</strong></div>
+                    <div class="menu-row"><span>Fanta</span><strong>$2.49</strong></div>
+                    <div class="menu-row"><span>Water</span><strong>$1.99</strong></div>
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-
-    <!-- ==========================
-         ENTREES
-    =========================== -->
-
+    <!-- ENTREES -->
     <section class="menu-category entrees">
-
         <div class="container">
-
             <div class="section-title">
-
                 <span>Signature Dishes</span>
-
                 <h2>Entrées</h2>
-
-                <p>
-                    Our signature Kenyan and African dishes are freshly prepared
-                    using traditional recipes and served with your choice of two sides.
-                </p>
-
+                <p>Our signature Kenyan and African dishes are freshly prepared using traditional recipes and served with your choice of two sides.</p>
             </div>
-
-
             <div class="menu-list">
-
-
-                <!-- KUKU WA KARI -->
-
                 <div class="menu-item">
-
                     <div>
-
-                        <h3>
-                            
-                            Kuku wa Kari
-                        </h3>
-
-                        <p>
-                            Kenyan Curry Chicken
-                        </p>
-
+                        <h3>Kuku wa Kari</h3>
+                        <p>Kenyan Curry Chicken</p>
                     </div>
-
                     <span>$16.95</span>
-
                 </div>
-
-
-                <!-- NYAMA WA MCHUZI -->
-
                 <div class="menu-item">
-
                     <div>
-
-                        <h3>
-                            Nyama wa Mchuzi
-                        </h3>
-
-                        <p>
-                            Traditional Kenyan Beef Stew
-                        </p>
-
+                        <h3>Nyama wa Mchuzi</h3>
+                        <p>Traditional Kenyan Beef Stew</p>
                     </div>
-
                     <span>$18.95</span>
-
                 </div>
-
-
-                <!-- KUKU CHOMA -->
-
                 <div class="menu-item">
-
                     <div>
-
-                        <h3>
-                            Kuku Choma
-                        </h3>
-
-                        <p>
-                            Baked chicken marinated in authentic Kenyan spices.
-                        </p>
-
+                        <h3>Kuku Choma</h3>
+                        <p>Baked chicken marinated in authentic Kenyan spices.</p>
                     </div>
-
                     <span>$16.95</span>
-
                 </div>
-
-
-                <!-- NYAMA KAANGA -->
-
                 <div class="menu-item">
-
                     <div>
-
-                        <h3>
-                            Nyama Kaanga
-                        </h3>
-
-                        <p>
-                            Sautéed beef with onions, tomatoes &amp; bell peppers.
-                        </p>
-
+                        <h3>Nyama Kaanga</h3>
+                        <p>Sautéed beef with onions, tomatoes & bell peppers.</p>
                     </div>
-
                     <span>$18.95</span>
-
                 </div>
-
-
-                <!-- MBUZI WA KARI -->
-
                 <div class="menu-item">
-
                     <div>
-
-                        <h3>
-                            Mbuzi wa Kari
-                        </h3>
-
-                        <p>
-                            Slow-cooked goat in rich curry sauce.
-                        </p>
-
+                        <h3>Mbuzi wa Kari</h3>
+                        <p>Slow-cooked goat in rich curry sauce.</p>
                     </div>
-
                     <span>$22.95</span>
-
                 </div>
-
-
-                <!-- SAMAKI KAANGA -->
-
                 <div class="menu-item">
-
                     <div>
-
-                        <h3>
-                            Samaki Kaanga
-                        </h3>
-
-                        <p>
-                            Whole deep-fried tilapia (bone in).
-                        </p>
-
+                        <h3>Samaki Kaanga</h3>
+                        <p>Whole deep-fried tilapia (bone in).</p>
                     </div>
-
                     <span>$23.95</span>
-
                 </div>
-
-
-                <!-- SAMAKI WA MCHUZI -->
-
                 <div class="menu-item">
-
                     <div>
-
-                        <h3>
-                            Samaki wa Mchuzi
-                        </h3>
-
-                        <p>
-                            Tilapia simmered in a creamy coconut curry sauce.
-                        </p>
-
+                        <h3>Samaki wa Mchuzi</h3>
+                        <p>Tilapia simmered in a creamy coconut curry sauce.</p>
                     </div>
-
                     <span>$23.95</span>
-
                 </div>
-
-
-                <!-- CURRY TOFU -->
-
                 <div class="menu-item">
-
                     <div>
-
-                        <h3>
-                            Curry Tofu
-                        </h3>
-
-                        <p>
-                            Tofu cooked in a rich coconut curry sauce.
-                        </p>
-
+                        <h3>Curry Tofu</h3>
+                        <p>Tofu cooked in a rich coconut curry sauce.</p>
                     </div>
-
                     <span>$15.95</span>
-
                 </div>
-
-
-                <!-- VEGGIE PLATE -->
-
                 <div class="menu-item">
-
                     <div>
-
-                        <h3>
-                            Veggie Plate
-                        </h3>
-
-                        <p>
-                            Your choice of three freshly prepared vegetable sides.
-                        </p>
-
+                        <h3>Veggie Plate</h3>
+                        <p>Your choice of three freshly prepared vegetable sides.</p>
                     </div>
-
                     <span>$15.95</span>
-
                 </div>
-
             </div>
-
-
-            <!-- ENTRÉE NOTE -->
-
             <div class="menu-note">
-
-                <strong>Please Note:</strong>
-
-                All entrées are served with your choice of
-                <strong>two sides.</strong>
-
+                <strong>Please Note:</strong> All entrées are served with your choice of <strong>two sides.</strong>
             </div>
-
         </div>
-
     </section>
 
-
-    <!-- ==========================
-         CHEF'S NOTE
-    =========================== -->
-
+    <!-- CHEF'S NOTE -->
     <section class="chef-note">
-
         <div class="container">
-
             <h2>From Our Kitchen</h2>
-
-            <p>
-                At Millie's Cuisine, every dish is prepared from scratch using
-                fresh ingredients, authentic African spices, and recipes passed
-                down through generations. Our goal is to bring the warmth of
-                African hospitality to every meal we serve.
-            </p>
-
+            <p>At Millie's Cuisine, every dish is prepared from scratch using fresh ingredients, authentic African spices, and recipes passed down through generations. Our goal is to bring the warmth of African hospitality to every meal we serve.</p>
         </div>
-
     </section>
 
-
-    <!-- ==========================
-         PRE-ORDER NOTICE
-    =========================== -->
-
+    <!-- PRE-ORDER NOTICE -->
     <section class="order-notice">
-
         <div class="container">
-
             <h2>Important Information</h2>
-
-            <p>
-                To ensure freshness and availability, all entrées should be
-                pre-ordered before <strong>3:00 PM</strong> on the previous day.
-                Thank you for helping us prepare every meal with care.
-            </p>
-
+            <p>To ensure freshness and availability, all entrées should be pre-ordered before <strong>3:00 PM</strong> on the previous day. Thank you for helping us prepare every meal with care.</p>
         </div>
-
     </section>
 
-
-    <!-- ==========================
-         CALL TO ACTION
-    =========================== -->
-
+    <!-- CALL TO ACTION -->
     <section class="menu-cta">
-
         <div class="container">
-
-            <h2>
-                Ready to Enjoy Authentic African Cuisine?
-            </h2>
-
-            <p>
-                We look forward to serving you delicious homemade meals inspired
-                by the rich cultures of Kenya and Africa.
-            </p>
-
-            <a href="contact.html" class="btn">
-                Contact Us
-            </a>
-
+            <h2>Ready to Enjoy Authentic African Cuisine?</h2>
+            <p>We look forward to serving you delicious homemade meals inspired by the rich cultures of Kenya and Africa.</p>
+            <a href="contact.html" class="btn">Contact Us</a>
         </div>
-
     </section>
 
-
-    <!-- ==========================
-         FOOTER
-    =========================== -->
-
+    <!-- FOOTER -->
     <footer class="footer">
-
-        <div class="container">
-
-            <div class="footer-grid">
-
-                <!-- ABOUT -->
-
-                <div class="footer-column">
-
-                    <img
-                        src="images/logo.jpeg"
-                        alt="Millie's Cuisine Logo"
-                        class="footer-logo"
-                    >
-
-                    <p>
-                        A Taste of Kenya in Alabama.
-                        Bringing authentic African flavors,
-                        warm hospitality, and homemade meals
-                        to every table.
-                    </p>
-
-                </div>
-
-
-                <!-- QUICK LINKS -->
-
-                <div class="footer-column">
-
-                    <h3>Quick Links</h3>
-
-                    <ul>
-
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-
-                        <li>
-                            <a href="menu.html">Menu</a>
-                        </li>
-
-                        <li>
-                            <a href="gallery.html">Gallery</a>
-                        </li>
-
-                        <li>
-                            <a href="reviews.html">Reviews</a>
-                        </li>
-
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <!-- CONTACT -->
-
-                <div class="footer-column">
-
-                    <h3>Contact</h3>
-
-                    <ul class="footer-contact">
-
-                        <li>
-                            <i class="fas fa-location-dot"></i>
-                            Madison, Alabama
-                        </li>
-
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            Contact us for details
-                        </li>
-
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            Contact us by email
-                        </li>
-
-                    </ul>
-
-                </div>
-
-
-                <!-- SOCIAL MEDIA -->
-
-                <div class="footer-column">
-
-                    <h3>Follow Us</h3>
-
-                    <div class="footer-social">
-
-                        <a
-                            href="https://www.facebook.com/profile.php?id=100083269661090"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Facebook"
-                        >
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-
-                        <a
-                            href="https://www.instagram.com/milliescuisine"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Instagram"
-                        >
-                            <i class="fab fa-instagram"></i>
-                        </a>
-
-                        <a
-                            href="https://www.tiktok.com/@milliescuisine"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="TikTok"
-                        >
-                            <i class="fab fa-tiktok"></i>
-                        </a>
-
-                    </div>
-
-                    <p class="footer-handle">
-                        @milliescuisine
-                    </p>
-
-                </div>
-
+        <div class="footer-container">
+            <!-- BRAND -->
+            <div class="footer-column footer-brand">
+                <img src="images/logo.jpeg" alt="Millie's Cuisine Logo" class="footer-logo" loading="lazy">
+                <p>Authentic Kenyan & African cuisine made with fresh ingredients, traditional recipes, and love.</p>
+                <p class="footer-tagline">A Taste of Kenya in Alabama</p>
             </div>
 
-
-            <!-- PRE-ORDER NOTICE -->
-
-            <div class="footer-notice">
-
-                <i class="fas fa-clock"></i>
-
-                <p>
-                    Please note: All entrées should be pre-ordered
-                    before 3:00 PM on the previous day.
-                </p>
-
+            <!-- QUICK LINKS -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
             </div>
 
+            <!-- CONTACT -->
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-location-dot"></i> 147 Castle Drive<br>Madison, AL 35758</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:2568089805">256-808-9805</a></p>
+                <p><i class="fas fa-clock"></i> Tuesday – Saturday<br>11:00 AM – 6:00 PM</p>
+            </div>
 
-            <!-- FOOTER BOTTOM -->
-
-            <div class="footer-bottom">
-
-                <p>
-                    &copy; 2026 Millie's Cuisine.
-                    All Rights Reserved.
-                </p>
-
-                <div class="footer-legal">
-
-                    <a href="privacy.html">
-                        Privacy Policy
-                    </a>
-
-                    <a href="terms.html">
-                        Terms of Use
-                    </a>
-
+            <!-- SOCIAL MEDIA -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <p>Follow us for delicious food, updates, and more.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/profile.php?id=100083269661090" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/milliescuisine" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@milliescuisine" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
                 </div>
-
+                <p class="footer-handle">@milliescuisine</p>
             </div>
-
         </div>
 
+        <!-- PRE-ORDER NOTICE -->
+        <div class="footer-order-notice">
+            <i class="fas fa-calendar-check"></i>
+            <span>All menu items must be pre-ordered. Please place your order by 3 PM the previous day.</span>
+        </div>
+
+        <!-- BOTTOM FOOTER -->
+        <div class="footer-bottom">
+            <p>© 2026 Millie's Cuisine. All Rights Reserved.</p>
+            <div class="footer-legal">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Use</a>
+            </div>
+        </div>
     </footer>
 
-
-    <!-- ==========================
-         SCROLL TO TOP
-    =========================== -->
-
+    <!-- SCROLL TO TOP -->
     <button id="scrollTopBtn" title="Go to top">
-
         <i class="fas fa-arrow-up"></i>
-
     </button>
 
-
-    <!-- JavaScript -->
-
     <script src="js/script.js"></script>
-
 </body>
-
 </html>

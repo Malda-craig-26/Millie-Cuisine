@@ -3,6 +3,22 @@
    RESPONSIVE CSS
    ========================================================= */
 
+/* ============================================
+   CRITICAL MOBILE FIXES
+   ============================================ */
+
+/* Fix iOS Safari auto-zoom on form inputs */
+.form-group input,
+.form-group textarea,
+.form-group select {
+    font-size: 16px !important;
+}
+
+/* Remove conflicting navbar toggle (let .nav-links.active handle it) */
+.navbar.active .nav-links {
+    display: none;
+}
+
 
 /* =========================================================
    TABLETS & SMALL LAPTOPS
@@ -111,6 +127,12 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Safety net: ensure full-width span if nested inside container */
+    .footer-order-notice,
+    .footer-bottom {
+        grid-column: 1 / -1;
+    }
+
 }
 
 
@@ -161,9 +183,9 @@
     .menu-toggle {
         display: block;
         cursor: pointer;
-        font-size: 25px;
+        font-size: 28px;
         color: #D4AF37;
-        z-index: 1100;
+        z-index: 1001;
     }
 
 
@@ -202,13 +224,6 @@
         display: block;
         padding: 14px 20px;
         font-size: 16px;
-    }
-
-
-    /* ---------- NAVBAR VERSION USING .navbar.active ---------- */
-
-    .navbar.active .nav-links {
-        display: flex;
     }
 
 
@@ -251,6 +266,11 @@
         width: 80%;
         max-width: 280px;
         text-align: center;
+    }
+
+    /* Fix btn-secondary left margin on mobile */
+    .hero-buttons .btn-secondary {
+        margin-left: 0;
     }
 
 
@@ -335,6 +355,7 @@
     /* ---------- ABOUT STORY ---------- */
 
     .our-story {
+        display: grid;          /* CRITICAL FIX: was missing */
         grid-template-columns: 1fr;
         gap: 35px;
         padding: 70px 6%;
@@ -436,7 +457,8 @@
     .gallery-hero,
     .reviews-hero,
     .contact-hero,
-    .privacy-hero {
+    .privacy-hero,
+    .terms-hero {
         padding: 80px 6%;
     }
 
@@ -444,7 +466,8 @@
     .gallery-hero h1,
     .reviews-hero h1,
     .contact-hero h1,
-    .privacy-hero h1 {
+    .privacy-hero h1,
+    .terms-hero h1 {
         font-size: 42px;
         line-height: 1.15;
     }
@@ -453,7 +476,8 @@
     .gallery-hero p,
     .reviews-hero p,
     .contact-hero p,
-    .privacy-hero p {
+    .privacy-hero p,
+    .terms-hero p {
         font-size: 15px;
         line-height: 1.7;
     }
@@ -629,6 +653,43 @@
     }
 
 
+    /* ---------- MENU PAGE ---------- */
+
+    .menu-hero h1 {
+        font-size: 42px;
+    }
+
+    .menu-columns {
+        grid-template-columns: 1fr !important;
+        gap: 30px;
+    }
+
+    .menu-column {
+        padding: 25px;
+    }
+
+    .menu-item,
+    .menu-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .menu-item span,
+    .menu-row strong {
+        align-self: flex-end;
+    }
+
+    .menu-item h3 {
+        font-size: 24px;
+    }
+
+    .menu-item span,
+    .menu-row strong {
+        font-size: 22px;
+    }
+
+
     /* ---------- FOOTER ---------- */
 
     .footer {
@@ -726,7 +787,8 @@
     .gallery-hero h1,
     .reviews-hero h1,
     .contact-hero h1,
-    .privacy-hero h1 {
+    .privacy-hero h1,
+    .terms-hero h1 {
         font-size: 36px;
     }
 
@@ -753,7 +815,7 @@
 
     .form-group input,
     .form-group textarea {
-        font-size: 14px;
+        font-size: 16px;
         padding: 12px;
     }
 
@@ -774,8 +836,10 @@
     }
 
     .footer-social a {
-        width: 38px;
-        height: 38px;
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        min-height: 44px;
     }
 
     .footer-bottom p,
@@ -824,7 +888,8 @@
     .gallery-hero h1,
     .reviews-hero h1,
     .contact-hero h1,
-    .privacy-hero h1 {
+    .privacy-hero h1,
+    .terms-hero h1 {
         font-size: 32px;
     }
 
