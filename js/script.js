@@ -163,3 +163,78 @@ if (
     });
 
 }
+
+
+// ===============================
+// FORMSPREE CONTACT FORM
+// ===============================
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", async (event) => {
+
+        // Prevent the browser from leaving the website
+        event.preventDefault();
+
+        const submitButton = contactForm.querySelector("button[type='submit']");
+
+        // Save the original button text
+        const originalButtonText = submitButton.textContent;
+
+        // Change button while sending
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
+
+        try {
+
+            const response = await fetch(contactForm.action, {
+
+                method: "POST",
+
+                body: new FormData(contactForm),
+
+                headers: {
+                    "Accept": "application/json"
+                }
+
+            });
+
+            if (response.ok) {
+
+                // Clear the form
+                contactForm.reset();
+
+                // Show success message
+                alert(
+                    "Thank you! Your message has been sent successfully. " +
+                    "We will get back to you soon."
+                );
+
+            } else {
+
+                alert(
+                    "Sorry, there was a problem sending your message. " +
+                    "Please try again."
+                );
+
+            }
+
+        } catch (error) {
+
+            alert(
+                "Sorry, we could not send your message. " +
+                "Please check your internet connection and try again."
+            );
+
+        } finally {
+
+            // Restore button
+            submitButton.disabled = false;
+            submitButton.textContent = originalButtonText;
+
+        }
+
+    });
+
